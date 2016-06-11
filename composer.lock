@@ -4,64 +4,9 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "27cb3eeb107c27ac70db13194a0ff82d",
-    "content-hash": "87bd5736df171451c2e38e8671983284",
+    "hash": "4e32fa264064adfcbaf03e5e4d4ef18d",
+    "content-hash": "e0acab301cfa7f4d2537d3059f12e0ac",
     "packages": [
-        {
-            "name": "curl/curl",
-            "version": "1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-mod/curl.git",
-                "reference": "38fc139f0e73149911a5765249e9900b9c70d5fc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-mod/curl/zipball/38fc139f0e73149911a5765249e9900b9c70d5fc",
-                "reference": "38fc139f0e73149911a5765249e9900b9c70d5fc",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "php": ">=5.3.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*",
-                "squizlabs/php_codesniffer": "~2.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Curl": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Hassan Amouhzi",
-                    "email": "hassan@anezi.net",
-                    "homepage": "http://hassan.amouhzi.com"
-                },
-                {
-                    "name": "php-curl-class",
-                    "homepage": "https://github.com/php-curl-class"
-                },
-                {
-                    "name": "user52",
-                    "homepage": "https://github.com/user52"
-                }
-            ],
-            "description": "cURL class for PHP",
-            "homepage": "https://github.com/php-mod/curl",
-            "keywords": [
-                "curl",
-                "dot"
-            ],
-            "time": "2016-06-04 18:16:12"
-        },
         {
             "name": "doctrine/annotations",
             "version": "v1.2.7",
