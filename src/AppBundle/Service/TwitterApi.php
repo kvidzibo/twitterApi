@@ -2,7 +2,6 @@
 namespace AppBundle\Service;
 
 use AppBundle\Exception\TwitterApiException;
-use AppBundle\Exception\EmptyResponseException;
 use Psr\Log\LoggerInterface;
 
 /**
