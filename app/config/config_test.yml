@@ -1,0 +1,7 @@
+imports:
+    - { resource: config.yml }
+    - { resource: services_test.yml }
+
+parameters:
+    twitter_api_key: test_username
+    twitter_api_secret: test_password

@@ -1,0 +1,18 @@
+services:
+    generic_api:
+        class: AppBundle\Service\GenericApi
+        arguments:
+            - '@logger'
+
+    content_formater:
+        class: AppBundle\Service\ContentFormater
+
+    twitter_api:
+        class: AppBundle\Service\TwitterApi
+        arguments:
+            - '@generic_api'
+            - '@logger'
+            - '@content_formater'
+            - '%twitter_api_key%'
+            - '%twitter_api_secret%'
+

@@ -1,0 +1,4 @@
+parameters:
+    secret:            ThisTokenIsNotSoSecretChangeIt
+    twitter_api_key: Your twitter api key
+    twitter_api_secret: Your twitter api secret

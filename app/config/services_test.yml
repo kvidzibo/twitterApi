@@ -1,0 +1,3 @@
+services:
+    generic_api:
+        class: Tests\AppBundle\Service\GenericApiMock
