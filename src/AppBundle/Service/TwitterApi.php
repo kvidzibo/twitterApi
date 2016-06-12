@@ -73,7 +73,10 @@ class TwitterApi {
             return [];
         }
         $lastTweet = end($response);
-        $this->validateResponse($lastTweet, ['id_str']);
+        $errors = $this->validateResponse($lastTweet, ['id_str' => false]);
+        if ($errors) {
+            $this->handleError($errors, $response, $endpoint, $parameters);
+        }
         $this->cursors[$endpoint.$username] = $lastTweet['id_str'];
         return $response;
     }
@@ -170,7 +173,7 @@ class TwitterApi {
             return $errors;
         }
         foreach ($validation as $key => $value) {
-            if (empty($response[$key])) {
+            if (!isset($response[$key])) {
                 $errors[] = $key . ' was not returned';
             } elseif ($value && $response[$key] != $value) {
                 $errors[] = $key . ' should be '. $value;
